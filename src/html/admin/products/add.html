@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>TheExotics/AdminPannel</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/form.css">
+  <script src="../../../js/logout_admin.js"></script>
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo-details">
+    <div class="logo_name">TheExotics</div>
+    <i class='bx bx-menu' id="btn"></i>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <a href="../dashboard.html">
+        <i class='bx bx-grid-alt'></i>
+        <span class="links_name">Dashboard</span>
+      </a>
+      <span class="tooltip">Dashboard</span>
+    </li>
+    <li>
+      <a href="../user.html">
+        <i class='bx bx-user'></i>
+        <span class="links_name">User</span>
+      </a>
+      <span class="tooltip">User</span>
+    </li>
+    <li>
+      <a href="../products.html">
+        <i class='bx bx-data'></i>
+        <span class="links_name">Products</span>
+      </a>
+      <span class="tooltip">Products</span>
+    </li>
+    <li>
+      <a href="../orders.html">
+        <i class='bx bx-cart-alt'></i>
+        <span class="links_name">Orders</span>
+      </a>
+      <span class="tooltip">Orders</span>
+    </li>
+    <li>
+      <a onclick="logout()">
+        <i class='bx bx-log-out' id="log_out"></i>        
+        <span class="links_name">LogOut</span>
+      </a>
+      <span class="tooltip">LogOut</span>
+    </li>
+  </ul>
+</div>
+<section class="home-section">
+    <section id="header">
+        <ul id="navbar">
+          <li><a class="active" href="add.html">Add Car</a></li>
+          <li><a href="add_img.html">Add Car Image</a></li>
+          <li><a href="delete.html">Delete Car</a></li>
+        </ul>
+    </section>
+  <div class="text">Add Car</div>
+  <form class="form">
+    <section id="c-data">
+        <div class="container">
+            <hr>
+            <label for="model"><b>Model Name*</b></label>
+            <input type="text" placeholder="Enter Model Name" name="model" id="model" required>
+
+            <div id="gen">
+              <label for="company"><b>Company*</b></label>
+              <select name="company" id="gender" required>
+                  <option value="" disabled selected>Select Company</option>
+                  <option value="ferrari">Ferrari</option>
+                  <option value="lemborghini">Lamborghini</option>
+                  <option value="maserati">Maserati</option>
+                  <option value="porsche">Porsche</option>
+                  <option value="macleran">MCleran</option>
+              </select>
+            </div>
+
+            <label for="year"><b>Model Year*</b></label>
+            <input type="text" placeholder="Enter Model Year" name="year" id="year" required>
+
+            <label for="bd"><b>Price*</b></label>
+            <input type="number" placeholder="Price" name="price" id="price" required>
+
+            <label for="speed"><b>Max-Speed*</b></label>
+            <input type="number" placeholder="Max Speed ( KM / H )" name="speed" id="speed" required>
+
+            <label for="time"><b>0-100 KM/H*</b></label>
+            <input type="text" placeholder="Time ( seconds )" name="time" id="time" required>
+
+            <div id="gen">
+              <label for="fueltype"><b>Fuel Type*</b></label>
+              <select name="fueltype" id="gender" required>
+                <option value="" disabled selected>Select Fuel Type</option>
+                  <option value="petrol">Petrol</option>
+                  <option value="deisel">Deisel</option>
+                  <option value="hybrid">Hybrid</option>
+                  <option value="electric">Electric</option>
+              </select>
+            </div>
+
+            <div id="gen">
+              <label for="drivetype"><b>Drive Type*</b></label>
+              <select name="drivetype" id="gender" required>
+                <option value="" disabled selected>Select Drive Type</option>
+                  <option value="awd">AWD</option>
+                  <option value="fwd">FWD</option>
+                  <option value="rwd">RWD</option>
+              </select>
+            </div>
+        
+            <label for="hp"><b>HorsePower*</b></label>
+            <input type="number" placeholder="HorsePower ( HP )" name="hp" id="hp" required>
+        
+            <label for="power"><b>Power*</b></label>
+            <input type="number" placeholder="Power ( KW )" name="power" id="power" required>
+
+            <label for="cc"><b>CC*</b></label>
+            <input type="number" placeholder="Power ( KW )" name="cc" id="cc" required>
+
+            <label><b>Dimentions</b></label>
+            <label for="len"><b>Length*</b></label>
+            <input type="number" placeholder="Length ( MM )" name="len" id="len" required>
+            <label for="wid"><b>Width*</b></label>
+            <input type="number" placeholder="Width ( MM )" name="wid" id="wid" required>
+            <label for="hig"><b>Higth*</b></label>
+            <input type="number" placeholder="Higth ( MM )" name="hig" id="hig" required>
+
+            <label for="weight"><b>Weight*</b></label>
+            <input type="number" placeholder="Power ( KW )" name="weight" id="weight" required>
+        
+            <hr>
+            <button type="submit" class="registerbtn">Add Car</button>
+        </div>
+    </section>
+  </form> 
+</section>
+  <script  src="../../../js/admin/dashboard.js"></script>
+  <script  src="../../../js/admin/products/add.js"></script>
+</body>
+</html>

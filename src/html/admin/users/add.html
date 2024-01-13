@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>TheExotics/AdminPannel</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <link rel="stylesheet" href="./../style.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/form.css">
+  <script src="../../../js/logout_admin.js"></script>
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo-details">
+    <div class="logo_name">TheExotics</div>
+    <i class='bx bx-menu' id="btn"></i>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <a href="../dashboard.html">
+        <i class='bx bx-grid-alt'></i>
+        <span class="links_name">Dashboard</span>
+      </a>
+      <span class="tooltip">Dashboard</span>
+    </li>
+    <li>
+      <a href="../user.html">
+        <i class='bx bx-user'></i>
+        <span class="links_name">User</span>
+      </a>
+      <span class="tooltip">User</span>
+    </li>
+    <li>
+      <a href="../products.html">
+        <i class='bx bx-data'></i>
+        <span class="links_name">Products</span>
+      </a>
+      <span class="tooltip">Products</span>
+    </li>
+    <li>
+      <a href="../orders.html">
+        <i class='bx bx-cart-alt'></i>
+        <span class="links_name">Orders</span>
+      </a>
+      <span class="tooltip">Orders</span>
+    </li>
+    <li>
+      <a onclick="logout()">
+        <i class='bx bx-log-out' id="log_out"></i>        
+        <span class="links_name">LogOut</span>
+      </a>
+      <span class="tooltip">LogOut</span>
+    </li>
+  </ul>
+</div>
+<section class="home-section">
+    <section id="header">
+        <ul id="navbar">
+            <li><a class="active" href="add.html">Add User</a></li>
+            <li><a href="delete.html">Delete User</a></li>
+        </ul>
+    </section>
+  <div class="text">Add User</div>
+  <form class="form">
+    <section id="c-data">
+        <div class="container">
+            <hr>
+            <label for="name"><b>First Name*</b></label>
+            <input type="text" placeholder="Enter First Name" name="name" id="name" required>
+
+            <label for="surname"><b>Last Name*</b></label>
+            <input type="text" placeholder="Enter Last Name" name="surname" id="surname" required>
+
+            <label for="bd"><b>Birth Name*</b></label>
+            <input type="date" placeholder="12/12/2000" name="bd" id="bd" required>
+
+            <div id="gen">
+                <label for="gender"><b>Gender*</b></label>
+                <select name="gender" id="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <label for="country"><b>Country*</b></label>
+            <input type="text" placeholder="Enter Email" name="country" id="country" required>
+
+            <label for="phone"><b>Phone*</b></label>
+            <input type="text" placeholder="Enter phone number" name="phone" id="phone" required>
+        
+            <label for="email"><b>Email*</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        
+            <label for="psw"><b>Password*</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        
+            <label for="psw_repeat"><b>Repeat Password*</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw_repeat" id="psw_repeat" required>
+            <hr>
+            <button type="submit" class="registerbtn">Add User</button>
+        </div>
+    </section>
+  </form> 
+</section>
+  <script  src="../../../js/admin/dashboard.js"></script>
+  <script  src="../../../js/admin/users/add.js"></script>
+</body>
+</html>
